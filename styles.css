@@ -1,0 +1,254 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/*Left Part, Grade Part*/
+
+.grades-container{
+    margin: auto;
+    width: auto;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 2em 2em 2em 2em;
+    -webkit-box-shadow: 15px 10px 15px 1px rgba(0,0,0,0.25);
+-moz-box-shadow: 15px 10px 15px 1px rgba(0,0,0,0.25);
+box-shadow: 15px 10px 15px 1px rgba(0,0,0,0.10);
+}
+
+.grade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 15em;
+    height: 20em;
+    padding: 2em;
+    justify-content: space-between;
+    border-radius: 1.5em;
+}
+
+
+.circle-grade{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    padding: 2.5em;
+    border-radius: 100%;
+    width: 5em;
+    height: 5em;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+h1{
+    color: hsl(221, 100%, 96%);
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 3.5em;
+}
+
+h2{
+    font-family: "Hanken Grotesk", sans-serif;
+    color: hsl(221, 100%, 96%);
+    font-weight: 600;
+}
+
+p{
+    font-family: "Hanken Grotesk", sans-serif;
+    text-align: center;
+    padding: 0.5em 1em 0.5em 1em;
+    color: hsla(221, 100%, 96%, 0.75);
+    font-weight: 200;
+}
+
+h3{
+    color: hsl(221, 100%, 96%);
+    font-family: "Hanken Grotesk", sans-serif;
+    color: hsla(221, 100%, 96%, 0.75);
+}
+
+
+/*Habilities*/
+
+.summary-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.habilities{
+    width: auto;
+    height: auto;
+}
+
+.hability{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 0.5em;
+    margin: 0.75em 0 0.75em 0;
+    border-radius: 0.75em;
+    margin: 1em 0 1em 0;
+}
+
+.icon-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h4{
+    margin-left: 0.75em;
+    margin-right: 3em;
+}
+
+.your-grade-circle{
+    font-size: 1em;
+    font-weight: 300;
+}
+
+button{
+    margin-top: 1em;
+    padding: 1em 5em 1em 5em;
+    border-radius: 3em;
+    border: none;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(221, 100%, 96%);
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 1em;
+}
+
+.grade-transparency{
+    color: rgba(20,20,20,0.5);
+    
+}
+
+.reaction{
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.memory{
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.verbal{
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.visual{
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+
+.reaction >.icon-name > h4{
+    color:hsl(0, 100%, 67%);
+}
+
+.memory >.icon-name > h4{
+    color:hsl(39, 100%, 56%);
+}
+
+.verbal >.icon-name > h4{
+    color:hsl(166, 100%, 37%);
+}
+
+.visual >.icon-name > h4{
+    color: hsl(234, 85%, 45%);
+}
+
+h5{
+    font-family: "Hanken Grotesk", sans-serif;
+    color: rgb(20,20,20);
+}
+
+h4{
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+.summary-text{
+    color: hsl(224, 30%, 27%);
+}
+
+.summary{
+    width: 100%;
+}
+
+
+/*RESPONSIVE PART*/
+
+@media only screen and (max-width: 650px) {
+
+    .grades-container{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        border-radius: 0em;
+    }
+
+    .grade{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        width: auto;
+        height: 25%;
+        padding: 2em;
+        justify-content: space-between;
+        border-radius: 0em 0em 2em 2em;
+    }
+
+    .summary-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0em;
+            width: 80%;
+            margin-bottom: 1em;
+            margin-top: 1em;
+    }
+
+    .habilities{
+        width: 100%;
+    }
+
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    
+    button{
+        margin-top: 1em;
+        padding: 25% 90% 25% 90%;
+        border-radius: 3em;
+        width: auto;
+    }
+  }
